@@ -69,7 +69,7 @@ export default props => {
         <View>
             <FlatList
                 keyExtractor={user => user.id.toString()}
-                data={users}
+                data={state.users}
                 renderItem={getUserItem}
             />
         </View>
